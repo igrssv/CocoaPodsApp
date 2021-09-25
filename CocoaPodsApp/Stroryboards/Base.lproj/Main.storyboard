@@ -21,7 +21,7 @@
                                 <color key="backgroundColor" red="0.66799789669999998" green="0.47512125970000002" blue="0.25860109930000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="acl-gf-Zqx"/>
-                                    <constraint firstAttribute="width" constant="300" id="daZ-YE-Xga"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="daZ-YE-Xga"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <state key="normal" title="Run">
@@ -49,28 +49,28 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="rb8-pf-cYl">
-                                <rect key="frame" x="156" y="80" width="48" height="120"/>
+                                <rect key="frame" x="36" y="80" width="303" height="128"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vUE-Uk-oRm">
-                                        <rect key="frame" x="0.0" y="0.0" width="48" height="24"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vUE-Uk-oRm" customClass="SpringLabel" customModule="Spring">
+                                        <rect key="frame" x="0.0" y="0.0" width="303" height="32"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xx8-5s-yiq">
-                                        <rect key="frame" x="0.0" y="32" width="48" height="24"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xx8-5s-yiq" customClass="SpringLabel" customModule="Spring">
+                                        <rect key="frame" x="0.0" y="40" width="303" height="24"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5lt-7p-ZKy">
-                                        <rect key="frame" x="0.0" y="64" width="48" height="24"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5lt-7p-ZKy" customClass="SpringLabel" customModule="Spring">
+                                        <rect key="frame" x="0.0" y="72" width="303" height="24"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ozu-aZ-YDd">
-                                        <rect key="frame" x="0.0" y="96" width="48" height="24"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ozu-aZ-YDd" customClass="SpringLabel" customModule="Spring">
+                                        <rect key="frame" x="0.0" y="104" width="303" height="24"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -81,23 +81,24 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="rb8-pf-cYl" firstAttribute="width" secondItem="HfS-vi-CMA" secondAttribute="width" multiplier="0.152381" id="2Q9-JD-a26"/>
                             <constraint firstItem="p97-7c-PeW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4ju-XT-tTb"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="p97-7c-PeW" secondAttribute="bottom" constant="105" id="5WN-la-0OT"/>
+                            <constraint firstItem="rb8-pf-cYl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="GdS-ZG-kw4"/>
                             <constraint firstItem="HfS-vi-CMA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="80" id="LBX-Nt-f5j"/>
-                            <constraint firstItem="HfS-vi-CMA" firstAttribute="leading" secondItem="rb8-pf-cYl" secondAttribute="trailing" constant="-174" id="Rmq-8R-Kg9"/>
-                            <constraint firstItem="rb8-pf-cYl" firstAttribute="height" secondItem="HfS-vi-CMA" secondAttribute="height" multiplier="0.9375" id="RxW-Dy-VOM"/>
+                            <constraint firstItem="rb8-pf-cYl" firstAttribute="bottom" secondItem="HfS-vi-CMA" secondAttribute="bottom" id="c6d-5Z-I9L"/>
                             <constraint firstItem="HfS-vi-CMA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cuy-ln-HIa"/>
-                            <constraint firstItem="HfS-vi-CMA" firstAttribute="top" secondItem="rb8-pf-cYl" secondAttribute="bottom" constant="-120" id="gOi-hI-JOL"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="rb8-pf-cYl" secondAttribute="trailing" constant="20" id="eUm-b2-Drb"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HfS-vi-CMA" secondAttribute="trailing" constant="30" id="lI2-Bt-GOC"/>
+                            <constraint firstItem="rb8-pf-cYl" firstAttribute="top" secondItem="HfS-vi-CMA" secondAttribute="top" id="mwP-C1-Udw"/>
                             <constraint firstItem="HfS-vi-CMA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="sD0-wH-LbK"/>
+                            <constraint firstItem="rb8-pf-cYl" firstAttribute="height" secondItem="HfS-vi-CMA" secondAttribute="height" id="wLq-0g-emM"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="curveLabel" destination="Xx8-5s-yiq" id="GWY-DU-btC"/>
-                        <outlet property="delayLabel" destination="Ozu-aZ-YDd" id="PMa-vN-aGw"/>
-                        <outlet property="durationLabel" destination="5lt-7p-ZKy" id="8iZ-2f-bnM"/>
-                        <outlet property="presentLabel" destination="vUE-Uk-oRm" id="FnJ-ya-R2s"/>
+                        <outlet property="curveLabel" destination="Xx8-5s-yiq" id="hFN-hJ-5og"/>
+                        <outlet property="delayLabel" destination="Ozu-aZ-YDd" id="akL-ul-ldK"/>
+                        <outlet property="durationLabel" destination="5lt-7p-ZKy" id="WJM-A3-qYx"/>
+                        <outlet property="presentLabel" destination="vUE-Uk-oRm" id="Xjf-3D-KbU"/>
                         <outlet property="springViewAnimated" destination="HfS-vi-CMA" id="HKs-iO-Qcg"/>
                     </connections>
                 </viewController>

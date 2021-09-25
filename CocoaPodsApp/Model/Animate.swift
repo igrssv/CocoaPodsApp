@@ -16,7 +16,6 @@ struct Animate {
         let present = DataManager.shared.present
         let curve = DataManager.shared.curve
         
-        
         let animated = Animate(present: "\(present[Int.random(in: 0..<present.count)])",
                                curve: "\(curve[Int.random(in: 0..<present.count)])",
                                force: 0,
