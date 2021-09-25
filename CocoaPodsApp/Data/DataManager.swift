@@ -14,7 +14,4 @@ class DataManager {
     let curve = Spring.AnimationCurve.allCases
     
     private init() {}
-    
-    
-    
 }
