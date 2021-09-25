@@ -8,20 +8,36 @@
 import Spring
 
 class ViewController: UIViewController {
+    
+    var animate = Animate.getAnimated()
 
     @IBOutlet weak var springViewAnimated: SpringView!
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
-    }
 
-
+    @IBOutlet weak var presentLabel: UILabel!
+    
+    @IBOutlet weak var curveLabel: UILabel!
+    
+    @IBOutlet weak var durationLabel: UILabel!
+    
+    @IBOutlet weak var delayLabel: UILabel!
+    
+    
     @IBAction func runAnimation(_ sender: SpringButton) {
-        springViewAnimated.animation = "slideLeft"
-        springViewAnimated.curve = "easeIn"
-        springViewAnimated.duration = 1
+        
+        springViewAnimated.animation = animate.present
+        springViewAnimated.curve = animate.curve
+        springViewAnimated.duration =  CGFloat(animate.duration)
         springViewAnimated.animate()
+        
+        animate = Animate.getAnimated()
+        sender.setTitle("Run " + animate.present, for: .normal)
+        
+        
+        
+        
+        
+        
     }
     
 }
