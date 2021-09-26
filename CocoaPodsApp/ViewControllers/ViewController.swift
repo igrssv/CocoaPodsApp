@@ -41,9 +41,8 @@ extension ViewController {
         springViewAnimated.delay = CGFloat(animate.dealy)
         springViewAnimated.animate()
         initLabelAnimation()
-        
-        
     }
+    
     private func initLabelAnimation() {
         presentLabel.animation = animate.present
         presentLabel.curve = animate.curve
@@ -69,7 +68,6 @@ extension ViewController {
         delayLabel.delay = CGFloat(animate.dealy)
         delayLabel.animate()
         initLabelText()
-
     }
     
     private func initLabelText() {
