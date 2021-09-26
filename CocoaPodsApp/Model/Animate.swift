@@ -6,11 +6,11 @@
 //
 
 struct Animate {
-    var present: String
-    var curve: String
-    var force: Int
-    var duration: Float
-    var dealy: Float
+    let present: String
+    let curve: String
+    let force: Int
+    let duration: Float
+    let dealy: Float
     
     static func getAnimated() -> Animate {
         let present = DataManager.shared.present
